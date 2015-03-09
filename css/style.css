@@ -1,0 +1,173 @@
+/* Paul Irish Box-Sizing: Border-Box reset - apply a natural box layout model to all elements, but allowing components to change http://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+/**
+ * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/)
+ * http://cssreset.com
+ */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+
+/* ================================= */
+
+body{
+  background-color: teal;
+  background-image: url('http://i.imgur.com/4x6NRIK.jpg');
+  background-size: cover;
+}
+
+.top-navigation{
+    height:100px; 
+     }
+
+.top-navigation .content {
+  width: 100%;
+}
+
+/*.top-navigation { 
+   -webkit-animation: myfirst 3s; 
+    animation: myfirst 3s;
+}
+
+@-webkit-keyframes myfirst {
+    0%   {background: white;}
+    50%  {background: gray;}
+    100% {background: #175BC1;}  
+}*/
+
+.top-navigation .title {
+  float: left;
+  text-align: center;
+  margin-left: 50px;
+  margin-right: 100px;
+  display: block;
+}
+
+.top-navigation .links {
+  float: right;
+  margin-top: 20px;
+  width: 400px;
+  display: block;
+}
+
+
+.top-navigation > .content h1, h2{
+    text-shadow: 2px 2px 8px #1C1D18; }
+
+.top-navigation > .content h1{
+    color: white;
+    font-size: 50px;
+    font-family: 'Lobster', cursive; }
+
+.top-navigation > .content h2{
+    color: white;
+    font-size: 20px; }
+
+.top-navigation .links li{
+    opacity: .25;
+    background-color: white;
+    padding: 3px;
+    display: block;
+    float: right;
+    font-size: 15px;
+    font-family: sans-serif;
+    margin-left: 10px;
+}
+
+.top-navigation .links li:hover{
+  opacity: .9;
+}
+
+/*===============================*/
+
+.projects {
+
+  background-color: rgba(255,255,255,.08);
+  margin-top: 100px;
+  height: 350px;
+  overflow: visible;
+}
+
+.projects .content {
+  max-width: 900px;
+  width: 100%;
+}
+
+.projects .app {
+  float: left;
+  text-align: center;
+  margin-right: 50px;
+  display: block;
+  opacity: .5;
+}
+.projects .app:hover {
+  opacity: 1;
+}
+
+.projects .app h1 {
+  font-size: 20px;
+  color: white;
+  text-shadow: 3px 3px 3px black;
+}
+.projects .app h2 {
+  color: white;
+  width: 200px;
+  margin: 0px auto;
+  font-family: arial;
+}
+.projects .app img{
+  border-radius: 10%;
+  border: 2px solid #E0E0E0;
+  margin-top: 10px; 
+  box-shadow: 3px 3px 3px black;
+  width: 250px;
+  height: 200px;
+}
+.projects .app img:hover{
+  border: 2px solid blue;
+}
+
+.social {
+  height: 100px;
+  margin-top: 50px;
+  font-size: 30px;
+}
+
+.social .content{
+  margin: 0 auto;
+  width: 500px;
+  color: white;
+}
